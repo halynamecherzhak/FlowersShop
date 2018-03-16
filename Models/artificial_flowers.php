@@ -8,8 +8,10 @@
 require_once ("flowers.php");
 class Artificial_Flowers extends Flowers
 {
+    //private $material;
     public function __construct($name, $color, $price, $height, $amount)
     {
         parent::__construct($name, $color, $price, $height, $amount);
     }
+
 }

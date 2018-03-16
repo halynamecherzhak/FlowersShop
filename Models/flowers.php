@@ -35,19 +35,20 @@ class Flowers extends Plant
 
     var $total;
 
-    protected function totalPrice()
+    public function totalPrice()
     {
         $total = $this->amount * $this->getPrice();
         return $total;
     }
 
-    protected function describe()
+    public function describe()
     {
-        return "It is flower " . $this->getName() . "with" . $this->getColor() . "color,price" . $this->getPrice() . "UAH and height" . $this->getHeight() .
-            "number is" . $this->amount;
+        return "It is flower " . $this->getName() . " with " . $this->getColor()
+            . " color, price " . $this->getPrice() . "UAH and height " . $this->getHeight() .
+            " number is " . $this->amount;
     }
 
-    private function isBouquet()
+    public function isBouquet()
     {
         if ($this->amount >= 2) {
             return "It is bouquet of flowers named as " . $this->getName() . "with" . $this->getColor() . "color,price" . $this->getPrice() . "UAH and height" . $this->getHeight() .

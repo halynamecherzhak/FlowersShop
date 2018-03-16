@@ -7,9 +7,9 @@ abstract class Plant
     private $price;
     private $height;
 
-    abstract protected function totalPrice();
+    abstract public function totalPrice();
 
-    abstract protected function describe();
+    abstract public function describe();
 
     public function __construct($name, $color, $price, $height)
     {

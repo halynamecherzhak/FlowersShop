@@ -13,7 +13,7 @@ class FlowerPot extends Plant
         parent::__construct($name, $color, $price, $height);
     }
 
-    protected function totalPrice()
+    public function totalPrice()
     {
         return $this->getPrice();
     }
