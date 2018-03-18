@@ -38,14 +38,15 @@ class Flowers extends Plant
     public function totalPrice()
     {
         $total = $this->amount * $this->getPrice();
-        return $total;
+        return "The full price  of flower is : ".$total."<br>";
     }
 
     public function describe()
     {
         return "It is flower " . $this->getName() . " with " . $this->getColor()
             . " color, price " . $this->getPrice() . "UAH and height " . $this->getHeight() .
-            " number is " . $this->amount;
+            " amount is " . $this->amount."<br>" ;
+
     }
 
     public function isBouquet()
